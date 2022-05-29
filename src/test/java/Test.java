@@ -3,14 +3,13 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SeleniumTest {
+public class Test {
 
     static WebDriver webDriver;
     static final String Website = "https://formy-project.herokuapp.com/form";
@@ -54,7 +53,7 @@ public class SeleniumTest {
     public static void afterAll(){
         WebElement btn = webDriver.findElement(By.className("btn"));
         btn.click();
-        //webDriver.quit();
+    
     }
 }
 
